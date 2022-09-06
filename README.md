@@ -1,10 +1,10 @@
-# Mark_II
+# Mark IV
 
 Bioinformatics Pipeline for metavirome analysis
 
 From QC to phylogenetic Tree
 
-# Quality Control and pre-processing
+## Quality Control and pre-processing
 
 fastqc and fastp
 
