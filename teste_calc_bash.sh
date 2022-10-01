@@ -164,11 +164,6 @@ divisao ()
     read num1
     echo "Digite um número: "
     read num2
-    
-    if [ $num2 == 0 ]
-    then
-      clear
-      exit
 
     div=$(($num1 / $num2 ))
 
