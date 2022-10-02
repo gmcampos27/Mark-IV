@@ -2,7 +2,7 @@
 #getting unmapped:
 $echo samtools view -b -f 4 /mapping/Pool_mapping.bam > /mapping/Pool_unmapped.bam
 # we are deleting the file original to save space
-$echo rm /project/svetoslav_slavov/metaviromaHumano/noHost/Pool_mapping.bam
+$echo rm Pool_mapping.bam
 count=$(samtools view -c /mapping/Pool_unmapped.bam)
 echo -e "There are $count unmapped reads!\n"
 $echo samtools fastq -1 Pool_unmapped.R1.fastq.gz -2 Pool_unmapped.R2.fastq.gz /mapping/Pool_unmapped.bam
