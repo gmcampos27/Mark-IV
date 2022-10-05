@@ -28,6 +28,6 @@ SPAdes ♠️
 
 ## Phylogenetic Tree 🌳
 
-iQTree </br>
 Mafft </br>
+iQTree </br>
 FigTree  - RStudio
