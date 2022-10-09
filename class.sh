@@ -19,7 +19,7 @@ echo "-------------KAIJU------------"
 $echo time kaiju -z 12 -t nodes.dmp -f kaiju_db_viruses.fmi -i Pool_unmapped.fastq.gz -o Pool_kaiju.out
 $echo kaiju2table -t nodes.dmp -n names.dmp -r species -u -e -o Pool_13_kaiju.tsv Pool_kaiju.out
 $echo mv Pool_kaiju.tsv /results
-echo -e "echo -e "\a\a\aDone, 2/4\a\a\a\n"
+echo -e "\a\a\aDone, 2/4\a\a\a\n"
 echo "----------DIAMOND------------"
 echo "Database creation"
 $echo diamond makedb --in nr.gz --db nr
