@@ -1,3 +1,5 @@
+#!/bin/bash
+
 ## Genome of Interest
 
 # There are two possibilities: generate a file in the standard Kraken format and select the specific virus to assemble or use a reference
