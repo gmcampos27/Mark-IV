@@ -27,6 +27,8 @@ $echo time diamond blastx -d viruses.dmnd --verbose --outfmt 100 -q Pool_unmappe
 $echo daa-meganizer -i Pool_diamond.daa -mdb megan-map-Jan2021.db
 echo -e "\a\a\aDone, 3/4\a\a\a\n"
 echo "-------CLARK---------"
+echo bash ./download_RefSeq db viruses
+echo bash ./set_targets db viruses
 $echo bash ./classify_metagenome.sh -O Pool_unmapped.fastq.gz -R Pool_clark -n 16
 $echo bash ./estimate_abundance.sh -F Pool_clark.csv -D db/viruses/
 echo -e "\a\a\aDone, 4/4\a\a\a\n"
