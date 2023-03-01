@@ -11,7 +11,7 @@ From QC to phylogenetic Tree
 
 ## Quality Control and pre-processing 📊
 
-fastQC and fastp 
+fastQC and fastP
 
 ## Mapping 🧬
 
