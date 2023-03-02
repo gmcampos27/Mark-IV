@@ -2,7 +2,9 @@
 
 ## Genome of Interest
 
-# There are two possibilities: generate a file in the standard Kraken format and select the specific virus to assemble or use a reference
+
+# For assembling the genomes, there are two possibilities: 
+#(1) generate a file in the standard Kraken format and select the specific virus to assemble or use a reference
 
 echo -e "individual assembly"
 $echo time kraken2 -db database/kraken2/db/ --threads 16 --paired -1 /mapping/Pool_unmapped.R1.fastq.gz -2 /mapping/Pool_unmapped.R2.fastq.gz --output Pool.kraken
@@ -16,11 +18,11 @@ $echo python extract_kraken_reads.py -k Pool.kraken -s1 /mapping/Pool_unmapped.R
 # 37124: Chikungunya virus
 # 11676: Human immunodeficiency virus 1
 
-#montagem
+#assembling command
 
 $echo spades.py -1 enta_R1.fastq -2 enta_R2.fastq -t 10 -o spades_output
 
-#------------------------ OR -----------------------------
+#(2) Assembling by reference
 
 echo -e "assembling by reference"
 
