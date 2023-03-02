@@ -30,4 +30,4 @@ MRCA(tree,"Whale","Human")
 ggtree(tree, color="black", size=1, linetype=1) + geom_tiplab(as_ylab=TRUE, color='firebrick') + ggtitle("Árvore Filogenética") +
   geom_cladelabel(node=31, label="Pool 1 & Y96",
                   color="blue", offset=0.01) + 
-  geom_point2(aes(subset=(node==1)), shape=21, size=5, fill='purple') + geom_point2(aes(subset=(node==9)), shape=21, size=5, fill='green') + geom_cladelabel(node=1, label="Pool 9 & MA095",color="blue", offset=0.01)
+  geom_point2(aes(subset=(node==1)), shape=21, size=5, fill='purple') + geom_point2(aes(subset=(node==9)), shape=21, size=5, fill='green') + geom_cladelabel(node=1, label="...",color="blue", offset=0.01)
