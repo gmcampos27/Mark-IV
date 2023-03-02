@@ -18,7 +18,8 @@ import os
 
 # join = joined.to_excel('joined.xlsx', index = False)
 
+interst = "species"
 data = pd.read_excel('join.xlsx')
 print(data.columns)
-virus = data[data['taxname'] == 'Coxsackievirus A2']
+virus = data[data['taxname'] == interest]
 print(virus)
