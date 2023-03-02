@@ -11,26 +11,23 @@ From QC to phylogenetic Tree
 
 ## Quality Control and pre-processing 📊
 
-fastQC and fastP
+fastQC ([Babraham Bioinformatics](http://www.bioinformatics.babraham.ac.uk/projects/fastqc)) and fastP (CHEN, S. et al. fastp: an ultra-fast all-in-one FASTQ preprocessor. Bioinformatics, v. 34, n. 17, p. i884–i890, 1 set. 2018).
 
 ## Mapping 🧬
 
-BWA 
+BWA (LI, H.; DURBIN, R. Fast and accurate short read alignment with Burrows-Wheeler transform. Bioinformatics, [S. l.], v. 25, n. 14, p. 1754–1760, 2009. DOI: 10.1093/bioinformatics/btp324)
 
 ## Taxonomic Classification
 
-Kraken2 🦑 </br>
-Kaiju 🦎 </br>
-Diamond 🔹</br>
-CLARK 👓
+[Kraken2](https://github.com/DerrickWood/kraken2/blob/master/docs/MANUAL.markdown) 🦑  </br>
+[Kaiju](https://github.com/bioinformatics-centre/kaiju) 🦎 </br>
+[Diamond](https://github.com/bbuchfink/diamond/wiki) 🔹</br>
+[CLARK](http://clark.cs.ucr.edu/) 👓
 
 ## Assembly
 
-SPAdes ♠️
+[SPAdes](https://github.com/ablab/spades) ♠️
 
 ## Phylogenetic Tree 🌳
 
-Mafft </br>
-iQTree </br>
-FigTree </br>
-ggTree (RStudio)
+[ggTree](https://bioconductor.org/packages/release/bioc/html/ggtree.html) (RStudio)
