@@ -14,11 +14,11 @@ There are two extra codes written in R that I used to plot the abundance graphs 
 
 ## Quality Control and pre-processing 📊
 
-fastQC ([Babraham Bioinformatics](http://www.bioinformatics.babraham.ac.uk/projects/fastqc)) and fastP (*CHEN, S. et al. fastp: an ultra-fast all-in-one FASTQ preprocessor. Bioinformatics, v. 34, n. 17, p. i884–i890, 1 set. 2018*).
+[FastQC](http://www.bioinformatics.babraham.ac.uk/projects/fastqc) and [fastP](https://github.com/OpenGene/fastp).
 
 ## Mapping 🧬
 
-BWA (*LI, H.; DURBIN, R. Fast and accurate short read alignment with Burrows-Wheeler transform. Bioinformatics, [S. l.], v. 25, n. 14, p. 1754–1760, 2009. DOI: 10.1093/bioinformatics/btp324*)
+[BWA](https://github.com/lh3/bwa)
 
 ## Taxonomic Classification
 
