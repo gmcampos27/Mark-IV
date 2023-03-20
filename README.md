@@ -7,7 +7,10 @@
 ![Top Langs](https://img.shields.io/badge/R-276DC3?style=for-the-badge&logo=r&logoColor=white)
 ![Top Langs](https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white)
 
-From QC to phylogenetic Tree
+From Quality Control (QC) to phylogenetic Tree
+
+This repository contains the command lines used in my thesis on viral metagenomics.
+There are two extra codes written in R that I used to plot the abundance graphs of the results.
 
 ## Quality Control and pre-processing 📊
 
