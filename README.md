@@ -10,7 +10,7 @@
 From Quality Control (QC) to phylogenetic Tree
 
 This repository contains the command lines used in my thesis on viral metagenomics.
-There are two extra codes written in R that I used to plot the abundance graphs of the results. The "tree.R" file is about the phylogenetic tree, which means the final step of this repository, however, is simpler, and friedly-user, to use [FigTree](http://tree.bio.ed.ac.uk/software/figtree/), therefore, this file contains only one example of the ggtree library. 
+There are two extra codes written in R that I used to plot the abundance graphs of the results. The "tree.R" file is about the phylogenetic tree, which means the final step of this repository, however, is simpler, and friedly-user, to use [FigTree](http://tree.bio.ed.ac.uk/software/figtree/). Therefore, this file contains only one example of the ggtree library. 
 
 ## Quality Control and pre-processing 📊
 
