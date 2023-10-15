@@ -10,7 +10,7 @@ library(RColorBrewer)
 library(treeio)
 
 #Definindo diretorio de trabalho
-setwd("C:/Users/User/Dropbox/PC (4)/Desktop/USP/Metagenômica/nipahvirus/nipahvirus_beast/relaxed_skyline_20ml_root/")
+setwd("path")
 
 #Carregando a arvore .treefile e os metadados .txt separados por tab
 
