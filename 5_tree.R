@@ -14,16 +14,16 @@ setwd("path")
 
 #Carregando a arvore .treefile e os metadados .txt separados por tab
 
-tree <- read.beast("nipa_aln_V4RELSKYLINE20MLroot-combined.tree") # importa a arvore. pacote ape
+tree <- read.beast("tree.tree") # importa a arvore. pacote ape
 #rooted_tree <- midpoint(tree) # faz o root midpoint. pacote phangorn
 
-p <- ggtree(tree, mrsd="2019-06-10") + 
+p <- ggtree(tree, mrsd="last date") + 
   theme_tree2() + geom_text(aes(label=node), hjust=-.2, size=) #+ geom_treescale(x = 1999, y = 1)  + layout_dendrogram(), aes(color = posterior)
 p
 
 #msaplot(p=ggtree(rooted_tree), fasta="nipa_aln_V4.fasta")
 
-metadata <- read.table("paises_metadados.txt", sep="\t", header=TRUE,check.names=FALSE, stringsAsFactor=F) #importa metadados
+metadata <- read.table("metadados.txt", sep="\t", header=TRUE,check.names=FALSE, stringsAsFactor=F) #importa metadados
 
 p <- p %<+% metadata
 p + geom_tippoint(aes(color= Country), size = 4, shape = 19) +
@@ -68,7 +68,7 @@ palette <-c("cornflowerblue", "cadetblue2","chartreuse", "aquamarine4","darkgold
 
 #Importar a árvore
 
-tree_niv <- read.beast("nipa_aln_V4RELSKYLINE20MLroot-combined.tree")
+tree_niv <- read.beast("tree.tree")
 
 metadados <- read_excel('metadados_final.xlsx')
 metadados$Clade <- as.character(metadados$clade)
@@ -86,7 +86,7 @@ metadados$Date3 <- as.Date(cut(metadados$date,
   breaks = "1 month",
   start.on.monday = FALSE))
 
-p_niv1 <- ggtree(tree_niv, mrsd="2019-06-10", as.Date=TRUE,color='black',size=0.1) %<+% metadados + theme_tree2()
+p_niv1 <- ggtree(tree_niv, mrsd="last date", as.Date=TRUE,color='black',size=0.1) %<+% metadados + theme_tree2()
 p_niv1# + geom_text(aes(label=node), hjust=-.2, size=3)
 
 p_niv2<-p_niv1 +
@@ -105,7 +105,7 @@ p_niv2<-p_niv1 +
 p_niv2
 
 #transformar em numeric
-ggtree(tree_niv,mrsd="2019-06-10")  +
+ggtree(tree_niv,mrsd="last date")  +
   geom_nodelab(aes(x=branch, label=round(posterior, 2)), vjust=-.5, size=3) +
   theme(legend.position=c(.1, .8))
 
@@ -114,7 +114,7 @@ metaDATA_NIV <- data.frame(Genotype = metadados$genotype,Clade = metadados$clade
 rownames(metaDATA_NIV) <- metadados$name
 
 
-p_niv <- ggtree(tree_niv, mrsd="2019-06-10")%<+% metadados +
+p_niv <- ggtree(tree_niv, mrsd="last date")%<+% metadados +
   theme(legend.position = "left")  + 
   theme_tree2() +
   geom_tippoint(aes(fill=location), shape = 21, size= 3) +
