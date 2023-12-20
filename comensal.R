@@ -1,5 +1,5 @@
 #Diretório
-setwd('C:/Users/User/Dropbox/PC (4)/Desktop/USP/Metagenômica/Dados')
+setwd('/Dados')
 
 #biblioteca
 library(readr)
