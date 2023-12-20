@@ -1,7 +1,7 @@
 import pandas as pd
 from openpyxl import Workbook
 
-data = pd.read_csv('C:/Users/USUARIO/Dropbox/PC (3)/Desktop/USP/Metagenômica/scaffolds_above_500_vs_nt_qcov70_uniq.tsv', delimiter='\t', names=['qseqid', 'sallseqid', 'pident', 'length', 'qcovs', 'qstart', 'qend', 'sstart', 'send', 'evalue', 'bitscore', 'staxids', 'scomnames'], header= None)
+data = pd.read_csv('scaffolds_above_500_vs_nt_qcov70_uniq.tsv', delimiter='\t', names=['qseqid', 'sallseqid', 'pident', 'length', 'qcovs', 'qstart', 'qend', 'sstart', 'send', 'evalue', 'bitscore', 'staxids', 'scomnames'], header= None)
 
 data.columns
 
