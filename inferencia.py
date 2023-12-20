@@ -3,7 +3,7 @@ from Bio.SeqUtils import gc_fraction
 from Bio import SeqIO
 import pandas as pd
 
-fasta_file = "/mnt/project2/svetoslav_slavov/metaviromaHumano/spades/spades_output_Pool_1/scaffolds_above_500_pep_converted.fasta"
+fasta_file = "path/spades/spades_output_Pool_1/scaffolds_above_500_pep_converted.fasta"
 
 for record in SeqIO.parse(fasta_file, "fasta"):
     seq_id = record.id
